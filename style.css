@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
+}
+
+#reproductor-container {
+    text-align: center;
+    max-width: 100px;
+    max-height: 100px;
+    margin: 20px auto;
+    border-radius: 50%;
+    background-color: #2d2d2d;
+    padding: 50px;
+}
+
+#reproductor {
+    display: inline-block;
+}
+
+#controles {
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #e00e0e;
+    color: #ffffff;
+    padding: 5px 5px;
+    border: none;
+    border-radius: 50%;
+    margin: 5 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #404040;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto; /* Centrar la lista */
+    text-align: center; /* Centrar el texto de los elementos li */
+    max-width: 200px; /* Ancho máximo */
+}
+
+li {
+    background-color: #2d2d2d;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    width: 100%; /* Para que tenga el mismo ancho */
+    white-space: nowrap; /* Evitar que se rompa en varias líneas */
+    overflow: hidden; /* Ocultar texto que no cabe */
+    text-overflow: ellipsis; /* Mostrar puntos suspensivos si el texto es demasiado largo */
+}
+
+li:hover {
+    background-color: #404040;
+}
+
+#volumeSlider {
+    width: 80px;
+    margin-top: 10px;
+}
