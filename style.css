@@ -8,9 +8,10 @@ body {
 
 #reproductor-container {
     text-align: center;
+    justify-content: center;
     max-width: 100px;
     max-height: 100px;
-    margin: 20px auto;
+    margin: 10px auto;
     border-radius: 50%;
     background-color: #2d2d2d;
     padding: 50px;
@@ -21,11 +22,11 @@ body {
 }
 
 #controles {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 button {
-    background-color: #e00e0e;
+    background-color: #090b29;
     color: #ffffff;
     padding: 5px 5px;
     border: none;
@@ -35,7 +36,7 @@ button {
 }
 
 button:hover {
-    background-color: #404040;
+    background-color: #0513d8;
 }
 
 ul {
@@ -43,11 +44,11 @@ ul {
     padding: 0;
     margin: 0 auto; /* Centrar la lista */
     text-align: center; /* Centrar el texto de los elementos li */
-    max-width: 200px; /* Ancho máximo */
+    max-width: 400px; /* Ancho máximo */
 }
 
 li {
-    background-color: #2d2d2d;
+    background-color: #090b29;
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 5px;
@@ -59,7 +60,7 @@ li {
 }
 
 li:hover {
-    background-color: #404040;
+    background-color: #0513d8;
 }
 
 #volumeSlider {
