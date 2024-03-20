@@ -1,34 +1,87 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #1a1a1a;
     color: #ffffff;
     margin: 0;
     padding: 20px;
+    background-image: url('/image/fondo\ estrellado.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.anta-regular {
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .average-sans-regular {
+    font-family: "Average Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.container-head {
+width: 100%;
+height: 100px;
+margin-bottom: 5px; /* Cambia este valor según el espacio deseado */
+padding-bottom: 5px; /* Cambia este valor según el espacio deseado */
+}
+#titulos{
+    margin-left: 40px;
+}
+
+.title{
+    font-family: "Anta", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+.subTitle{
+    font-family: "Average Sans", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+  color: aqua;
+}
+h1, h3 {
+    margin-bottom: 2px; /* Cambia este valor según el espacio deseado */
+}
+
+.linea1 {
+    border-bottom:  dotted rgb(0, 177, 247); /* 1px de grosor, línea punteada, color negro */
+    width: 100%; /* Ancho completo */
+    padding-top: px; /* Espacio alrededor de la línea */ 
+}
+.linea2{
+    border-bottom:  dotted rgb(0, 177, 247); /* 1px de grosor, línea punteada, color negro */
+    width: 100%; /* Ancho completo */
+    padding-top: 1px; /* Espacio alrededor de la línea */
+    
 }
 
 #reproductor-container {
     text-align: center;
     justify-content: center;
-    max-width: 100px;
-    max-height: 100px;
-    margin: 10px auto;
-    border-radius: 50%;
-    background-color: #2d2d2d;
-    padding: 50px;
+    max-width: 300px;
+    max-height: 200%;
+    margin: 40px auto;
+    background-color: #2d2d2d ;
+    padding: 50px auto;
 }
 
 #reproductor {
     display: inline-block;
+    width: 100%;
+    height: 100%;
 }
 
 #controles {
-    margin-bottom: 15px;
+    margin-bottom: 15px auto;
 }
 
 button {
     background-color: #090b29;
     color: #ffffff;
-    padding: 5px 5px;
+    padding: 10px 10px;
     border: none;
     border-radius: 50%;
     margin: 5 5px;
