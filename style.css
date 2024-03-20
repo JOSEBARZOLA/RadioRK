@@ -29,6 +29,7 @@ padding-bottom: 5px; /* Cambia este valor según el espacio deseado */
 }
 #titulos{
     margin-left: 40px;
+    width:300px;
 }
 
 .title{
@@ -72,7 +73,7 @@ h1, h3 {
 }
 .linea-divisoria{
     border-bottom: 5px  dotted #007bff; /* 1px de grosor, línea punteada, color negro */
-    width: 10%; /* Ancho completo */
+    width: 80%; /* Ancho completo */
     
 }
 
