@@ -5,6 +5,7 @@ body {
     margin: 0;
     padding: 0;
     background-image: url('/image/fondo\ estrellado.jpg');
+    background-color: #000000;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative; 
@@ -144,7 +145,8 @@ li:hover {
     color: #555;
 }
 
-@media screen and (max-height: 330px) {
+/* Media query para ajustar la altura del cuerpo en dispositivos móviles */
+@media screen and (max-height: 330px) and (min-height: 200px) {
     body {
         min-height: calc(100vh - 60px); /* Resta la altura del footer (60px) */
     }
