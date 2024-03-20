@@ -73,7 +73,7 @@ h1, h3 {
 }
 .linea-divisoria{
     border-bottom: 5px  dotted #007bff; /* 1px de grosor, línea punteada, color negro */
-    width: 80%; /* Ancho completo */
+    width: 50%; /* Ancho completo */
     
 }
 
