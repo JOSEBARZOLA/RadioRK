@@ -52,7 +52,8 @@ h1, h3 {
 .linea1 {
     border-bottom:  dotted rgb(0, 177, 247); /* 1px de grosor, línea punteada, color negro */
     width: 100%; /* Ancho completo */
-    padding-top: px; /* Espacio alrededor de la línea */ 
+    padding-top: 10px; /* Espacio alrededor de la línea */ 
+    
 }
 .linea2{
     border-bottom:  dotted rgb(0, 177, 247); /* 1px de grosor, línea punteada, color negro */
