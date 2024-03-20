@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    height: auto;
+    height: 100%;
     color: #ffffff;
     margin: 0;
     padding: 0;
@@ -142,4 +142,10 @@ li:hover {
 .footer-text {
     font-size: 14px;
     color: #555;
+}
+
+@media screen and (max-height: 330px) {
+    body {
+        min-height: calc(100vh - 60px); /* Resta la altura del footer (60px) */
+    }
 }
