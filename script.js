@@ -20,15 +20,16 @@ function togglePlayPause() {
 
 function prevRadio() {
     currentRadio = (currentRadio - 1 + radios.length) % radios.length;
-    cambiarRadio(radios[currentRadio].getAttribute('data-url'));
+    cambiarRadio(radios[currentRadio]);
 }
 
 function nextRadio() {
     currentRadio = (currentRadio + 1) % radios.length;
-    cambiarRadio(radios[currentRadio].getAttribute('data-url'));
+    cambiarRadio(radios[currentRadio]);
 }
 
-function cambiarRadio(url) {
+function cambiarRadio(radio) {
+    var url = radio.getAttribute('data-url');
     audio.src = url;
     audio.play();
     playPauseButton.innerHTML = '&#10074;&#10074;'; // Cambiar a ícono de pausa al cambiar de radio
@@ -39,4 +40,11 @@ function setVolume() {
 }
 
 // Reproducir automáticamente la primera radio al cargar la página
-cambiarRadio(radios[0].getAttribute('data-url'));
+cambiarRadio(radios[currentRadio]);
+
+// Asignar eventos de clic a los elementos <li> para cambiar la radio
+radios.forEach(function(radio) {
+    radio.addEventListener('click', function() {
+        cambiarRadio(radio);
+    });
+});
