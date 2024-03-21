@@ -80,6 +80,7 @@ h1, h3 {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     border: 2px solid aqua; /* Borde de color aqua */
 }
+
 #reproductor {
     display: flex;
     flex-direction: column;
@@ -88,36 +89,42 @@ h1, h3 {
     width: 100%;
     height: 70px; /* Ajustamos la altura */
 }
+
 #controles {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 15px;
 }
+
 button {
     background-color: #007bff;
     color: white;
     border: none;
-    border-radius: 50%;
+    border-radius: 10px; /* Hacemos los botones cuadrados */
     padding: 10px;
     margin: 0 5px;
     font-size: 20px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    height: 40px; /* Altura fija para los botones */
+    width: 40px; /* Ancho cuadrado */
+    height: 40px; /* Altura cuadrada */
 }
+
 button:hover {
     background-color: #0056b3;
 }
+
 input[type="range"] {
     width: 80%;
     margin: 0 10px;
     background-color: transparent;
-    
 }
+
 input[type="range"]:focus {
     outline: none;
 }
+
 input[type="range"]::-webkit-slider-runnable-track {
     width: 100%;
     height: 4px;
@@ -125,6 +132,7 @@ input[type="range"]::-webkit-slider-runnable-track {
     background: #ccc;
     border-radius: 2px;
 }
+
 input[type="range"]::-webkit-slider-thumb {
     border: none;
     height: 16px;
@@ -135,6 +143,7 @@ input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
     margin-top: -6px;
 }
+
 input[type="range"]::-moz-range-track {
     width: 100%;
     height: 4px;
@@ -142,6 +151,7 @@ input[type="range"]::-moz-range-track {
     background: #ccc;
     border-radius: 2px;
 }
+
 input[type="range"]::-moz-range-thumb {
     border: none;
     height: 16px;
@@ -150,6 +160,7 @@ input[type="range"]::-moz-range-thumb {
     background: #007bff;
     cursor: pointer;
 }
+
 input[type="range"]::-ms-track {
     width: 100%;
     height: 4px;
@@ -158,14 +169,15 @@ input[type="range"]::-ms-track {
     border-color: transparent;
     color: transparent;
 }
+
 input[type="range"]::-ms-fill-lower {
     background: #ccc;
-    border-radius: 2px;
 }
+
 input[type="range"]::-ms-fill-upper {
     background: #ccc;
-    border-radius: 2px;
 }
+
 input[type="range"]::-ms-thumb {
     border: none;
     height: 16px;
@@ -174,6 +186,7 @@ input[type="range"]::-ms-thumb {
     background: #007bff;
     cursor: pointer;
 }
+
 #listaRadios {
     z-index: 2; /* Asegura que la lista esté por encima del footer */
 }
